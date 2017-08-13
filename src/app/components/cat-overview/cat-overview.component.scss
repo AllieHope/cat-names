@@ -4,8 +4,14 @@
 }
 
 .cat-list-container {
-  columns: 2;
+  columns: 4;
+  column-width: 180px;
+
+  @media (min-width: 992px) {
+    width: 976px;
+  }
 }
+
 
 ul.cat-list {
   list-style: none;
