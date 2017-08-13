@@ -20,4 +20,9 @@ export class CatService {
       .map((res: any) => res.json());
   }
 
+  saveCatDetails(cat: Cat) {
+    // this is where the cat descriptions api endpoint would go
+    return this.http.post("/endpoint", cat);
+  }
+
 }

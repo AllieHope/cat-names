@@ -8,7 +8,7 @@ import {AppComponent} from "./app.component";
 import {CatOverviewComponent} from "./components/cat-overview/cat-overview.component";
 import {CatService} from "./services/cat-service";
 import {CatDetailComponent} from "./components/cat-detail/cat-detail.component";
-import {FormBuilder} from "@angular/forms";
+import {Form, FormBuilder} from "@angular/forms";
 
 const appRoutes: Routes = [
   {
@@ -35,7 +35,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [CatService],
+  providers: [CatService, FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule {
