@@ -6,7 +6,7 @@
 
   <div class="cat-list-container">
     <ul class="cat-list">
-      <li *ngFor="let cat of cats" class="cat-item">{{cat}}</li>
+      <li *ngFor="let cat of cats" class="cat-item"><a routerLink="/{{cat.toLowerCase()}}">{{cat}}</a></li>
     </ul>
   </div>
 

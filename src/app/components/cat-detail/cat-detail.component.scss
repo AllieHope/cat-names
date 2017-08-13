@@ -1,0 +1,12 @@
+.cat-detail-form {
+  font-size: 18px;
+  line-height: 30px;
+
+  #name {
+    text-transform: capitalize;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
